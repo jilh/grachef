@@ -1,0 +1,23 @@
+.bg-transparent{
+    background: transparent !important;
+}
+.brand-text{
+    font-weight: bold;
+}
+
+.navigation-link{
+    font-size: 2em;
+    margin-left: 1.5em;
+    color: #fff;
+}
+
+.pill-style{
+    background: #F9F06C;
+    color: #6b6b6b;
+    padding: 12px 10px;
+    border-radius: 50px !important;
+    position: absolute;
+    left: -5px;
+    top: -20px;
+    font-size: 14px;
+}
