@@ -33,12 +33,12 @@
     font-weight: bold;
     border-radius: 50px;
     padding: 10px 30px;
-    background-color: #F89A3A;
-    border-color: #F89A3A;
+    background-color: #F89A3A !important;
+    border-color: #F89A3A !important;
 }
 .header-btn:hover{
-    background-color: #fa8d20;
-    border-color: #fa8006;
+    background-color: #fa8d20 !important;
+    border-color: #fa8006 !important;
 }
 
 .hero-image{
