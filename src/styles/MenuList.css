@@ -44,11 +44,13 @@
 }
 .menu-item > .cta-btn > a{
     text-decoration: none;
-    background: #F89A3A;
+    background: #fff;
     border-bottom-right-radius: 18px;
     padding: 12px;
-    color: #fff;
+    color: #F89A3A;
+    font-weight: bold;
 }
 .menu-item > .cta-btn > a:hover{
-    background: #fa8d20;
+    background: #F89A3A;
+    color: #fff;
 }
