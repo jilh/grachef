@@ -1,5 +1,5 @@
 import {Container} from "react-bootstrap"
-import {FaStar, FaRegHeart} from 'react-icons/fa'
+import {FaStar, FaRegStar, FaRegHeart} from 'react-icons/fa'
 import '../styles/MenuList.css'
 
 
@@ -15,8 +15,8 @@ function MenuList(){
                             <FaStar />
                             <FaStar />
                             <FaStar />
-                            <FaStar />
-                            <FaStar />
+                            <FaRegStar />
+                            <FaRegStar />
                         </div>
                         <b>FCFA 2500</b>
                         <div className="cta-btn">
@@ -32,7 +32,7 @@ function MenuList(){
                             <FaStar />
                             <FaStar />
                             <FaStar />
-                            <FaStar />
+                            <FaRegStar />
                         </div>
                         <b>FCFA 2500</b>
                         <div className="cta-btn">
