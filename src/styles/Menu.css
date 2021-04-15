@@ -1,3 +1,9 @@
+.menu-section{
+    background-image: url('../design-files/menu-background.svg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+}
 .category-search{
     display: flex;
     justify-content: space-between;
