@@ -39,4 +39,5 @@
 .menu-search:focus{
     border: 2px solid #F89A3A;
     border-radius: 50px;
+    outline: none;
 }
