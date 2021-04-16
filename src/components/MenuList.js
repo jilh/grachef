@@ -12,11 +12,11 @@ function MenuList(){
                         <img src={'/uploads/image1.png'} alt="Grilled chicken" />
                         <b>Grilled Chicken</b>
                         <div className="rating-group">
-                            <FaStar />
-                            <FaStar />
-                            <FaStar />
-                            <FaRegStar />
-                            <FaRegStar />
+                            <em><FaStar /></em>
+                            <em><FaStar /></em>
+                            <em><FaStar /></em>
+                            <em><FaRegStar /></em>
+                            <em><FaRegStar /></em>
                         </div>
                         <b>FCFA 2500</b>
                         <div className="cta-btn">
@@ -28,11 +28,11 @@ function MenuList(){
                         <img src={'/uploads/image1.png'} alt="Grilled chicken" />
                         <b>Grilled Chicken</b>
                         <div className="rating-group">
-                            <FaStar />
-                            <FaStar />
-                            <FaStar />
-                            <FaStar />
-                            <FaRegStar />
+                            <em><FaStar /></em>
+                            <em><FaStar /></em>
+                            <em><FaStar /></em>
+                            <em><FaRegStar /></em>
+                            <em><FaRegStar /></em>
                         </div>
                         <b>FCFA 2500</b>
                         <div className="cta-btn">
@@ -44,11 +44,11 @@ function MenuList(){
                         <img src={'/uploads/image1.png'} alt="Grilled chicken" />
                         <b>Grilled Chicken</b>
                         <div className="rating-group">
-                            <FaStar />
-                            <FaStar />
-                            <FaStar />
-                            <FaStar />
-                            <FaStar />
+                            <em><FaStar /></em>
+                            <em><FaStar /></em>
+                            <em><FaStar /></em>
+                            <em><FaRegStar /></em>
+                            <em><FaRegStar /></em>
                         </div>
                         <b>FCFA 2500</b>
                         <div className="cta-btn">
@@ -60,11 +60,11 @@ function MenuList(){
                         <img src={'/uploads/image1.png'} alt="Grilled chicken" />
                         <b>Grilled Chicken</b>
                         <div className="rating-group">
-                            <FaStar />
-                            <FaStar />
-                            <FaStar />
-                            <FaStar />
-                            <FaStar />
+                            <em><FaStar /></em>
+                            <em><FaStar /></em>
+                            <em><FaStar /></em>
+                            <em><FaRegStar /></em>
+                            <em><FaRegStar /></em>
                         </div>
                         <b>FCFA 2500</b>
                         <div className="cta-btn">
@@ -76,11 +76,11 @@ function MenuList(){
                         <img src={'/uploads/image1.png'} alt="Grilled chicken" />
                         <b>Grilled Chicken</b>
                         <div className="rating-group">
-                            <FaStar />
-                            <FaStar />
-                            <FaStar />
-                            <FaStar />
-                            <FaStar />
+                            <em><FaStar /></em>
+                            <em><FaStar /></em>
+                            <em><FaStar /></em>
+                            <em><FaRegStar /></em>
+                            <em><FaRegStar /></em>
                         </div>
                         <b>FCFA 2500</b>
                         <div className="cta-btn">
@@ -92,11 +92,11 @@ function MenuList(){
                         <img src={'/uploads/image1.png'} alt="Grilled chicken" />
                         <b>Grilled Chicken</b>
                         <div className="rating-group">
-                            <FaStar />
-                            <FaStar />
-                            <FaStar />
-                            <FaStar />
-                            <FaStar />
+                            <em><FaStar /></em>
+                            <em><FaStar /></em>
+                            <em><FaStar /></em>
+                            <em><FaRegStar /></em>
+                            <em><FaRegStar /></em>
                         </div>
                         <b>FCFA 2500</b>
                         <div className="cta-btn">
@@ -108,11 +108,11 @@ function MenuList(){
                         <img src={'/uploads/image1.png'} alt="Grilled chicken" />
                         <b>Grilled Chicken</b>
                         <div className="rating-group">
-                            <FaStar />
-                            <FaStar />
-                            <FaStar />
-                            <FaStar />
-                            <FaStar />
+                            <em><FaStar /></em>
+                            <em><FaStar /></em>
+                            <em><FaStar /></em>
+                            <em><FaRegStar /></em>
+                            <em><FaRegStar /></em>
                         </div>
                         <b>FCFA 2500</b>
                         <div className="cta-btn">
@@ -124,43 +124,11 @@ function MenuList(){
                         <img src={'/uploads/image1.png'} alt="Grilled chicken" />
                         <b>Grilled Chicken</b>
                         <div className="rating-group">
-                            <FaStar />
-                            <FaStar />
-                            <FaStar />
-                            <FaStar />
-                            <FaStar />
-                        </div>
-                        <b>FCFA 2500</b>
-                        <div className="cta-btn">
-                            <em><FaRegHeart /></em>
-                            <a href="#">Add to Cart</a>
-                        </div>
-                    </div>
-                    <div className="menu-item shadow-sm bg-white">
-                        <img src={'/uploads/image1.png'} alt="Grilled chicken" />
-                        <b>Grilled Chicken</b>
-                        <div className="rating-group">
-                            <FaStar />
-                            <FaStar />
-                            <FaStar />
-                            <FaStar />
-                            <FaStar />
-                        </div>
-                        <b>FCFA 2500</b>
-                        <div className="cta-btn">
-                            <em><FaRegHeart /></em>
-                            <a href="#">Add to Cart</a>
-                        </div>
-                    </div>
-                    <div className="menu-item shadow-sm bg-white">
-                        <img src={'/uploads/image1.png'} alt="Grilled chicken" />
-                        <b>Grilled Chicken</b>
-                        <div className="rating-group">
-                            <FaStar />
-                            <FaStar />
-                            <FaStar />
-                            <FaStar />
-                            <FaStar />
+                            <em><FaStar /></em>
+                            <em><FaStar /></em>
+                            <em><FaStar /></em>
+                            <em><FaRegStar /></em>
+                            <em><FaRegStar /></em>
                         </div>
                         <b>FCFA 2500</b>
                         <div className="cta-btn">

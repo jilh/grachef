@@ -28,6 +28,9 @@
     justify-content: center;
     color: #b9b9b9;
 }
+.menu-item > .rating-group > em{
+    padding: 2px 5px;
+}
 .menu-item > b:last-of-type{
     color: #F89A3A;
 }
