@@ -43,7 +43,7 @@
     outline: none;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 768px){
     .category-search > ul{
         flex-basis: 100%;
     }

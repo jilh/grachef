@@ -75,7 +75,7 @@
 }
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 768px){
     .header{
         height: 100%;
     }
@@ -89,7 +89,7 @@
     }
     .header-wrapper h1{
         font-weight: bold;
-        font-size: 4em;
+        font-size: 3.5em;
         color: #707070;
         margin-top: -5px;
     }
