@@ -1,0 +1,19 @@
+.footer {
+    padding: 60px 0;
+    text-align: center;
+}
+.footer h6{
+    padding: 20px 0;
+    color: #F89A3A;
+    font-weight: bolder;
+}
+.footer a{
+    display: block;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: #707070;
+    margin-bottom: 10px;
+}
+.footer a:hover{
+    font-weight: bold;
+}
