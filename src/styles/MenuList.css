@@ -40,10 +40,11 @@
     margin-top: 25px;
 }
 .menu-item > .cta-btn > em{
-    align-self: center;
-    margin: 0px auto;
+    padding-left: 20px;
+    padding-right: 20px;
     font-size: 1.6em;
     color: #F89A3A;
+    display: block;
 }
 .menu-item > .cta-btn > a{
     text-decoration: none;
