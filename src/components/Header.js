@@ -14,6 +14,7 @@ function Header(){
 
                 <Container>
                     <Row>
+                    <img src={heroImage} alt="Food Recipe" className={"hero-image-mobile"}/>
                         <Col md={6}>
                             <h1>Delicious Treats</h1>
                             <p>We believe everyone deserves a treat that not only satisfy hunger, but gives nutritional value to the body.</p>

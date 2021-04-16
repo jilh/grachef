@@ -49,6 +49,9 @@
     top: 8vh;
     z-index: 0;
 }
+.hero-image-mobile{
+    display: none;
+}
 
 .app-icon{
     opacity: 0.3;
@@ -69,6 +72,42 @@
     bottom: 0;
     font-size: 2em;
     color: #fff;
+}
+
+
+@media only screen and (max-width: 600px){
+    .header{
+        height: 100%;
+    }
+    .header-wrapper{
+        background-image: none;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: inherit;
+        width: inherit;
+    }
+    .header-wrapper h1{
+        font-weight: bold;
+        font-size: 4em;
+        color: #707070;
+        margin-top: -5px;
+    }
+    .hero-image{
+        display: none;
+    }
+    .hero-image-mobile{
+        display: inline;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .app-icon{
+        display: none;
+    }
+    .social-icons{
+        display: none;
+    }
 }
 
 
