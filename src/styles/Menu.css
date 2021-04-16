@@ -9,6 +9,7 @@
     justify-content: space-between;
     margin-top: 50px;
     margin-bottom: 80px;
+    flex-wrap: wrap;
 }
 .category-search > ul{
     list-style-type: none;
@@ -40,4 +41,20 @@
     border: 2px solid #F89A3A;
     border-radius: 50px;
     outline: none;
+}
+
+@media only screen and (max-width: 600px){
+    .category-search > ul{
+        flex-basis: 100%;
+    }
+    .category-search > ul > li {
+        display: inline-block;
+        font-weight: bold;
+        margin-left: 10px;
+        color: #969696;
+        padding: 6px 10px;
+    }
+    .menu-search{
+        flex-basis: 100%;
+    }
 }
