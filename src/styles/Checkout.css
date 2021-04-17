@@ -11,7 +11,7 @@
 }
 .checkout{
     width: 360px; /* This used to be 450px before i reduced for optimization */
-    height: 100vh;
+    height: 100%;
     background: #F89A3A;
     position: fixed;
     right: 0;
@@ -23,7 +23,10 @@
     padding: 80px 40px;
     padding-top: 100px;
 }
-
+.checkout-item-wrapper{
+    overflow: scroll;
+    height: 80% !important;
+}
 .checkout-item{
     width: 100%;
     height: 100px;
@@ -35,7 +38,7 @@
 }
 .checkout-item > span{
     color: #707070;
-    position: absolute;
+    position: relative;
 }
 .checkout-item > img{
     width: auto;
@@ -53,4 +56,19 @@
     width: 40px;
     display: block;
     background: #e9e9e9;
+}
+.checkout-cta{
+    padding-top: 24px;
+}
+.checkout-cta > .checkout-btn{
+    border: 1px solid #f9f06c;
+    padding: 12px 20px;
+    background: #F9F06C;
+    color: #000000;
+    font-weight: bold;
+    border-radius: 50px;
+    width: 100%;
+}
+.checkout-cta > .checkout-btn:hover{
+    background: #eee23f;
 }
