@@ -5,9 +5,9 @@ import Footer from "./components/Footer"
 function App() {
   return (
     <div>
-      <Header />
-      <Menu />
-      <Footer />
+        <Header />
+        <Menu />
+        <Footer />
     </div>
   )
 }

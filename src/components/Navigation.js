@@ -1,10 +1,11 @@
 import {Navbar, Container, Nav, Badge} from 'react-bootstrap'
 import {FaShoppingCart, FaBars} from 'react-icons/fa';
 import "../styles/Navigation.css"
+import Checkout from './Checkout';
 
 function Navigation(){
     return(
-        <Navbar bg="transparent" expand="lg" style={{paddingTop: '35px'}}>
+        <Navbar fixed="top" bg="transparent" expand="lg" style={{paddingTop: '35px', zIndex: 1000}}>
             <Container>
                 <Navbar.Brand href="#home" className={"brand-text"}>
                 <img
@@ -24,6 +25,7 @@ function Navigation(){
                     </Nav>
                 {/* </Navbar.Collapse> */}
             </Container>
+            <Checkout />
         </Navbar>
     )
 }
