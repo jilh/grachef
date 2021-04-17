@@ -21,7 +21,7 @@ function MenuList(){
                         <b>FCFA 2500</b>
                         <div className="cta-btn">
                             <em><FaRegHeart /></em>
-                            <a href="#">Add to Cart</a>
+                            <a href="#add">Add to Cart</a>
                         </div>
                     </div>
                     <div className="menu-item shadow-sm bg-white">
@@ -37,7 +37,7 @@ function MenuList(){
                         <b>FCFA 2500</b>
                         <div className="cta-btn">
                             <em><FaRegHeart /></em>
-                            <a href="#">Add to Cart</a>
+                            <a href="#add">Add to Cart</a>
                         </div>
                     </div>
                     <div className="menu-item shadow-sm bg-white">
@@ -53,7 +53,7 @@ function MenuList(){
                         <b>FCFA 2500</b>
                         <div className="cta-btn">
                             <em><FaRegHeart /></em>
-                            <a href="#">Add to Cart</a>
+                            <a href="#add">Add to Cart</a>
                         </div>
                     </div>
                     <div className="menu-item shadow-sm bg-white">
@@ -69,7 +69,7 @@ function MenuList(){
                         <b>FCFA 2500</b>
                         <div className="cta-btn">
                             <em><FaRegHeart /></em>
-                            <a href="#">Add to Cart</a>
+                            <a href="#add">Add to Cart</a>
                         </div>
                     </div>
                     <div className="menu-item shadow-sm bg-white">
@@ -85,7 +85,7 @@ function MenuList(){
                         <b>FCFA 2500</b>
                         <div className="cta-btn">
                             <em><FaRegHeart /></em>
-                            <a href="#">Add to Cart</a>
+                            <a href="#add">Add to Cart</a>
                         </div>
                     </div>
                     <div className="menu-item shadow-sm bg-white">
@@ -101,7 +101,7 @@ function MenuList(){
                         <b>FCFA 2500</b>
                         <div className="cta-btn">
                             <em><FaRegHeart /></em>
-                            <a href="#">Add to Cart</a>
+                            <a href="#add">Add to Cart</a>
                         </div>
                     </div>
                     <div className="menu-item shadow-sm bg-white">
@@ -117,7 +117,7 @@ function MenuList(){
                         <b>FCFA 2500</b>
                         <div className="cta-btn">
                             <em><FaRegHeart /></em>
-                            <a href="#">Add to Cart</a>
+                            <a href="#add">Add to Cart</a>
                         </div>
                     </div>
                     <div className="menu-item shadow-sm bg-white">
@@ -133,7 +133,7 @@ function MenuList(){
                         <b>FCFA 2500</b>
                         <div className="cta-btn">
                             <em><FaRegHeart /></em>
-                            <a href="#">Add to Cart</a>
+                            <a href="#add">Add to Cart</a>
                         </div>
                     </div>
                 </div>
