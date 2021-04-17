@@ -12,7 +12,7 @@ function Header(){
             <div className={"header-wrapper"}>
                 <Navigation />
 
-                <Container>
+                <Container style={{paddingTop: "85px"}}>
                     <Row>
                     <img src={heroImage} alt="Food Recipe" className={"hero-image-mobile"}/>
                         <Col md={6}>
