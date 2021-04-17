@@ -21,3 +21,29 @@
     top: -20px;
     font-size: 14px;
 }
+
+@media only screen and (max-width: 768px){
+    .navigation-link{
+        font-size: 1.5em;
+        margin-left: 1em;
+        color: #8b8b8b;
+    }
+    .navigation-link:first-of-type{
+        margin-right: 1em;
+    }
+    .nav-hack{
+        display: flex;
+        flex-direction: row;
+    }
+    .pill-style{
+        background: #F9F06C;
+        color: #6b6b6b;
+        padding: 6px 5px;
+        border-radius: 50px !important;
+        position: absolute;
+        left: -35px;
+        top: -15px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}

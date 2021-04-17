@@ -16,13 +16,13 @@ function Navigation(){
                 />{' '}
                 Grachef
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="ml-auto">
-                    <Nav.Link href="#home"><FaShoppingCart className="navigation-link" /><sup><Badge pill className={'pill-style'}>276</Badge></sup></Nav.Link>
-                        <Nav.Link href="#home"><FaBars className="navigation-link" /></Nav.Link>
+                
+                {/* <Navbar.Collapse id="basic-navbar-nav"> */}
+                    <Nav className="ml-auto nav-hack">
+                    <Nav.Link href="#cart"><FaShoppingCart className="navigation-link" /><sup><Badge pill className={'pill-style'}>276</Badge></sup></Nav.Link>
+                        <Nav.Link href="#menu"><FaBars className="navigation-link" /></Nav.Link>
                     </Nav>
-                </Navbar.Collapse>
+                {/* </Navbar.Collapse> */}
             </Container>
         </Navbar>
     )
