@@ -19,7 +19,7 @@ function Navigation(){
     return(
         <Navbar fixed="top" bg="transparent" expand="lg" style={{paddingTop: '35px', zIndex: 1000}}>
             <Container>
-                <Navbar.Brand href="#home" className={"brand-text"}>
+                <Navbar.Brand href="#home" className={"brand-text"} style={{zIndex: -1}}>
                 <img
                     alt="Grachef Logo"
                     src="/images/logo.svg"
