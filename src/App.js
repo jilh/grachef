@@ -1,24 +1,27 @@
-import Header from "./components/Header"
-import Menu from "./components/Menu"
-import Footer from "./components/Footer"
-
-// const handleScroll = () => {
-//   if (window.scrollY > 20) {
-//     document.querySelector(".navbar").className = "bg-primary";
-//     console.log("Something");
-//   } else {
-//     document.querySelector(".navbar").className = "bg-transparent";
-//     console.log("Another thing");
-//   }
-// };
+import React from 'react'
+// import Header from "./components/Header"
+// import Menu from "./components/Menu"
+// import Footer from "./components/Footer"
+import Home from "./components/Home"
+import Checkout from "./components/Checkout"
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
-        <Header />
+    <BrowserRouter>
+        {/* <Header />
         <Menu />
         <Footer />
-    </div>
+        <Home /> */}
+        <Switch>
+            <Route exact path="/">
+                <Home />
+            </Route>
+            <Route path="/checkout">
+                <Checkout />
+            </Route>
+          </Switch>
+    </BrowserRouter>
   )
 }
 

@@ -10,7 +10,7 @@
 .navigation-link-customized{
     font-size: 1.8em;
     margin-left: 1.5em;
-    color: #000;
+    color: rgba(0,0,0 0.8);
 }
 .brand-text{
     font-weight: bold;
