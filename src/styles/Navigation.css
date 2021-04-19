@@ -1,6 +1,9 @@
 .bg-transparent{
     background: transparent !important;
 }
+.bg-customized{
+    background: #F89A3A;
+}
 .brand-text{
     font-weight: bold;
 }

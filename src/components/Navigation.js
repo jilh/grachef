@@ -16,8 +16,19 @@ function Navigation(){
         }
     }
 
+    const [navbarChanged, setNavbarChanged] = useState(false);
+    const changeNavbarBackground = () => {
+        if(window.scrollY >= 60){
+            setNavbarChanged(true);
+        }else{
+            setNavbarChanged(false);
+        }
+    }
+
+    window.addEventListener('scroll', changeNavbarBackground);
+
     return(
-        <Navbar fixed="top" bg="transparent" expand="lg" style={{paddingTop: '35px', zIndex: 1000}}>
+        <Navbar fixed="top" bg={navbarChanged ? "customized": "transparent"} expand="lg" style={{paddingTop: '35px', zIndex: 1000}}>
             <Container>
                 <Navbar.Brand href="#home" className={"brand-text"} style={{zIndex: -1}}>
                 <img
