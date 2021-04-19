@@ -2,14 +2,23 @@
     background: transparent !important;
 }
 .bg-customized{
-    background: #F89A3A;
+    background: rgb(255, 255, 255);
+    -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034);
+    -moz-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034);
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034);
+}
+.navigation-link-customized{
+    font-size: 1.8em;
+    margin-left: 1.5em;
+    color: #000;
 }
 .brand-text{
     font-weight: bold;
+    font-size: 1.8em;
 }
 
 .navigation-link{
-    font-size: 2em;
+    font-size: 1.8em;
     margin-left: 1.5em;
     color: #fff;
 }
@@ -31,9 +40,14 @@
         margin-left: 1em;
         color: #8b8b8b;
     }
-    .navigation-link:first-of-type{
-        margin-right: 1em;
+    .navigation-link-customized{
+        font-size: 1.5em;
+        margin-left: 1em;
+        color: #8b8b8b;
     }
+    /* .navigation-link:first-of-type{
+        margin-right: 1em;
+    } */
     .nav-hack{
         display: flex;
         flex-direction: row;
