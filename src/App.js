@@ -4,6 +4,7 @@ import React from 'react'
 // import Footer from "./components/Footer"
 import Home from "./components/Home"
 import Checkout from "./components/Checkout"
+import Cart from "./components/Cart"
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -17,8 +18,8 @@ function App() {
             <Route exact path="/">
                 <Home />
             </Route>
-            <Route path="/checkout">
-                <Checkout />
+            <Route path="/cart">
+                <Cart />
             </Route>
           </Switch>
     </BrowserRouter>

@@ -1,14 +1,9 @@
 import React, { useState } from "react"
 import {Navbar, Container, Nav, Badge} from 'react-bootstrap'
-import {FaShoppingCart, FaBars} from 'react-icons/fa';
+import {FaShoppingCart, FaBars, FaHome} from 'react-icons/fa';
 import "../styles/Navigation.css"
 import Checkout from './Checkout';
-import Home from './Home'
-import {
-    BrowserRouter as Router, 
-    Switch, 
-    Route, 
-    Link } from "react-router-dom";
+import {Link } from "react-router-dom";
 
 
 
@@ -51,12 +46,8 @@ function Navigation(){
                     
                     {/* <Navbar.Collapse id="basic-navbar-nav"> */}
                         <Nav className="ml-auto nav-hack">
-                            <Link to="/">
-                                <Nav.Link as={Link} to="/" onClick={toggleCheckout}><FaShoppingCart className={navbarChanged ? "navigation-link-customized" : "navigation-link"} /><sup><Badge pill className={'pill-style'}>276</Badge></sup></Nav.Link>
-                            </Link>
-                            <Link to="/checkout">
-                                <Nav.Link as={Link} to="/checkout"><FaBars className={navbarChanged ? "navigation-link-customized" : "navigation-link"} /></Nav.Link>
-                            </Link>
+                            <Nav.Link as={Link} to="/"><FaHome className={navbarChanged ? "navigation-link-customized" : "navigation-link"} /></Nav.Link>
+                            <Nav.Link as={Link} to="/cart"><FaShoppingCart className={navbarChanged ? "navigation-link-customized" : "navigation-link"} /><sup><Badge pill className={'pill-style'}>276</Badge></sup></Nav.Link>
                         </Nav>
                     {/* </Navbar.Collapse> */}
                 </Container>
