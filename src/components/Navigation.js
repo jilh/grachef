@@ -1,24 +1,27 @@
-import React, { useState } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import {Navbar, Container, Nav, Badge} from 'react-bootstrap'
-import {FaShoppingCart, FaBars, FaHome} from 'react-icons/fa';
+import {FaShoppingCart, FaHome} from 'react-icons/fa';
 import "../styles/Navigation.css"
-import Checkout from './Checkout';
-import {Link } from "react-router-dom";
+// import Checkout from './Checkout';
+import {Link, useLocation } from "react-router-dom";
 
 
 
 function Navigation(){
 
-    const [showCheckout, setShowCheckout] = useState(false);
-    const toggleCheckout = () => {
-        if ( showCheckout ){
-            setShowCheckout(false);
-        } else {
-            setShowCheckout(true);
-        }
-    }
+    // const [showCheckout, setShowCheckout] = useState(false);
+    // const toggleCheckout = () => {
+    //     if ( showCheckout ){
+    //         setShowCheckout(false);
+    //     } else {
+    //         setShowCheckout(true);
+    //     }
+    // }
 
     const [navbarChanged, setNavbarChanged] = useState(false);
+    const {pathname} = useLocation()
+    const mountedRef = useRef();
+
     const changeNavbarBackground = () => {
         if(window.scrollY >= 60){
             setNavbarChanged(true);
@@ -27,7 +30,17 @@ function Navigation(){
         }
     }
 
+    // Event fires up on scroll (to change navbar background)
     window.addEventListener('scroll', changeNavbarBackground);
+
+    // Automatically scroll to page top 
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        if(!mountedRef.current) return null;     
+    }, [pathname]);
+
+    console.log(pathname)
 
     return(
         
@@ -51,7 +64,7 @@ function Navigation(){
                         </Nav>
                     {/* </Navbar.Collapse> */}
                 </Container>
-                { showCheckout ? <Checkout /> : null }
+                {/* { showCheckout ? <Checkout /> : null } */}
             </Navbar>
 
             

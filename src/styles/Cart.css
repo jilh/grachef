@@ -1,7 +1,13 @@
+.cart-section{
+    background-image: url('../design-files/menu-background.svg');
+    background-size: cover;
+    background-position: center;
+    padding-top: -200px;
+}
 .cart{
-    margin-top: 100px;
-    background: #fff;
+    /* background: #fff; */
     padding: 100px;
+    padding-top: 150px;
 }
 .cart > h3{
     padding-bottom: 20px;

@@ -27,10 +27,10 @@ function Header(){
                         </Col>
 
                         <Col md={6}>
-                            
+                            <img src={heroImage} alt="Food Recipe" className={"hero-image"}/>
                         </Col>
 
-                        <img src={heroImage} alt="Food Recipe" className={"hero-image"}/>
+                        
 
                         <div style={{position: 'relative'}}>
                             <ul className={'social-icons'}>

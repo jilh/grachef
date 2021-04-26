@@ -3,7 +3,6 @@ import React from 'react'
 // import Menu from "./components/Menu"
 // import Footer from "./components/Footer"
 import Home from "./components/Home"
-import Checkout from "./components/Checkout"
 import Cart from "./components/Cart"
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 

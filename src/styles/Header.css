@@ -44,7 +44,7 @@
 .hero-image{
     position: absolute;
     height: 90%;
-    width: auto;
+    width: auto; 
     right: 5vw;
     top: 8vh;
     z-index: 0;
@@ -110,6 +110,7 @@
         display: none;
     }
 }
+
 
 
 

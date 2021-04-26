@@ -5,7 +5,7 @@ import Footer from "./Footer"
 
 function Cart(){
     return(
-        <div>
+        <div className="cart-section">
             <Navigation />
             <CartItems />
             <Footer />
