@@ -5,23 +5,27 @@ import React from 'react'
 import Home from "./components/Home"
 import Cart from "./components/Cart"
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+// import AppContext from './contexts/AppContext'
+import AppProvider from './providers/AppProvider'
 
 function App() {
   return (
-    <BrowserRouter>
-        {/* <Header />
-        <Menu />
-        <Footer />
-        <Home /> */}
-        <Switch>
-            <Route exact path="/">
-                <Home />
-            </Route>
-            <Route path="/cart">
-                <Cart />
-            </Route>
-          </Switch>
-    </BrowserRouter>
+    <AppProvider>
+      <BrowserRouter>
+          {/* <Header />
+          <Menu />
+          <Footer />
+          <Home /> */}
+          <Switch>
+              <Route exact path="/">
+                  <Home />
+              </Route>
+              <Route path="/cart">
+                  <Cart />
+              </Route>
+            </Switch>
+      </BrowserRouter>
+    </AppProvider>
   )
 }
 
