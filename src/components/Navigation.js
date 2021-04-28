@@ -4,6 +4,7 @@ import {FaShoppingCart, FaHome} from 'react-icons/fa';
 import "../styles/Navigation.css"
 // import Checkout from './Checkout';
 import {Link, useLocation } from "react-router-dom";
+import AppContext from "../contexts/AppContext";
 
 
 
@@ -40,36 +41,37 @@ function Navigation(){
         if(!mountedRef.current) return null;     
     }, [pathname]);
 
-    console.log(pathname)
-
     return(
-        
-            <Navbar fixed="top" bg={navbarChanged ? "customized": "transparent"} expand="lg" style={{paddingTop: '10px', zIndex: 1000}}>
-                <Container>
-                    <Navbar.Brand href="#home" className={"brand-text"} style={{zIndex: -1}}>
-                    <img
-                        alt="Grachef Logo"
-                        src="/images/logo.svg"
-                        width="50"
-                        height="50"
-                        className="d-inline-block align-top"
-                    />{' '}
-                    Grachef
-                    </Navbar.Brand>
-                    
-                    {/* <Navbar.Collapse id="basic-navbar-nav"> */}
-                        <Nav className="ml-auto nav-hack">
-                            <Nav.Link as={Link} to="/"><FaHome className={navbarChanged ? "navigation-link-customized" : "navigation-link"} /></Nav.Link>
-                            <Nav.Link as={Link} to="/cart"><FaShoppingCart className={navbarChanged ? "navigation-link-customized" : "navigation-link"} /><sup><Badge pill className={'pill-style'}>276</Badge></sup></Nav.Link>
-                        </Nav>
-                    {/* </Navbar.Collapse> */}
-                </Container>
-                {/* { showCheckout ? <Checkout /> : null } */}
-            </Navbar>
-
-            
-
-        
+        <AppContext.Consumer>
+            {
+                value => {
+                    return(
+                        <Navbar fixed="top" bg={navbarChanged ? "customized": "transparent"} expand="lg" style={{paddingTop: '10px', zIndex: 1000}}>
+                            <Container>
+                                <Navbar.Brand href="#home" className={"brand-text"} style={{zIndex: -1}}>
+                                <img
+                                    alt="Grachef Logo"
+                                    src="/images/logo.svg"
+                                    width="50"
+                                    height="50"
+                                    className="d-inline-block align-top"
+                                />{' '}
+                                Grachef
+                                </Navbar.Brand>
+                                
+                                {/* <Navbar.Collapse id="basic-navbar-nav"> */}
+                                    <Nav className="ml-auto nav-hack">
+                                        <Nav.Link as={Link} to="/"><FaHome className={navbarChanged ? "navigation-link-customized" : "navigation-link"} /></Nav.Link>
+                                        <Nav.Link as={Link} to="/cart"><FaShoppingCart className={navbarChanged ? "navigation-link-customized" : "navigation-link"} /><sup><Badge pill className={'pill-style'}>{value.cartItem.length}</Badge></sup></Nav.Link>
+                                    </Nav>
+                                {/* </Navbar.Collapse> */}
+                            </Container>
+                            {/* { showCheckout ? <Checkout /> : null } */}
+                        </Navbar>
+                    )
+                }
+            }
+        </AppContext.Consumer>
     )
 }
 
