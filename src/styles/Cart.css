@@ -48,16 +48,46 @@
     padding-top: 24px;
 }
 .cart-cta > .cart-btn{
-    border: 1px solid #f9f06c;
+    border: 1px solid #F89A3A;
     padding: 12px 20px;
-    background: #F9F06C;
-    color: #000000;
+    /* background: #F9F06C; */
+    background: #F89A3A;
+    color: #fff;
     font-weight: bold;
     border-radius: 50px;
     width: 100%;
 }
 .cart-cta > .cart-btn:hover{
-    background: #eee23f;
+    background: #f37c06;
+}
+.item-total{
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+}
+.item-total > .delivery-price{
+    display: flex;
+    justify-content: space-between;
+}
+.item-total > .delivery-price > b{
+    font-weight: normal;
+}
+.item-total > .tax-price{
+    display: flex;
+    justify-content: space-between;
+}
+.item-total > .tax-price > b{
+    font-weight: normal;
+}
+.item-total > .total-price{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.item-total > .total-price > b{
+    font-weight: bold;
+    color: #F89A3A;
 }
 
 @media only screen and (max-width: 768px){

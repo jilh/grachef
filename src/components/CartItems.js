@@ -32,7 +32,18 @@ function CartItems(){
                                     
                                 </div>
                                 <div className="item-total shadow-sm bg-white">
-                                    
+                                    <div className="delivery-price">
+                                        <i>Delivery Charge</i>
+                                        <b>FCFA 3000</b>
+                                    </div>
+                                    <div className="tax-price">
+                                        <i>VAT (10%)</i>
+                                        <b>FCFA 300</b>
+                                    </div>
+                                    <div className="total-price">
+                                        <i>Sub-total</i>
+                                        <b>FCFA 3300</b>
+                                    </div>
                                 </div>
 
                                 <div className="cart-cta">
