@@ -15,7 +15,7 @@ function Menu(){
                                 <div className="category-search">
                                     <ul>
                                         {
-                                            value.categoryList.map((number) => {
+                                            value.state.categoryList.map((number) => {
                                                 return <li key={number.id.toString()}>{number.categoryName}</li>
                                             })
                                         }

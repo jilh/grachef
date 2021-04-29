@@ -31,7 +31,10 @@ function CartItems(){
                                     }
                                     
                                 </div>
-                                
+                                <div className="item-total shadow-sm bg-white">
+                                    
+                                </div>
+
                                 <div className="cart-cta">
                                     <button className="cart-btn">Checkout</button>
                                 </div>
