@@ -62,7 +62,7 @@ function Navigation(){
                                 {/* <Navbar.Collapse id="basic-navbar-nav"> */}
                                     <Nav className="ml-auto nav-hack">
                                         <Nav.Link as={Link} to="/"><FaHome className={navbarChanged ? "navigation-link-customized" : "navigation-link"} /></Nav.Link>
-                                        <Nav.Link as={Link} to="/cart"><FaShoppingCart className={navbarChanged ? "navigation-link-customized" : "navigation-link"} /><sup><Badge pill className={'pill-style'}>{value.cartItem.length}</Badge></sup></Nav.Link>
+                                        <Nav.Link as={Link} to="/cart"><FaShoppingCart className={navbarChanged ? "navigation-link-customized" : "navigation-link"} /><sup><Badge pill className={'pill-style'}>{value.state.cartItem.length}</Badge></sup></Nav.Link>
                                     </Nav>
                                 {/* </Navbar.Collapse> */}
                             </Container>

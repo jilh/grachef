@@ -8,7 +8,7 @@ function MenuList(){
     return(
         <AppContext.Consumer>
             {
-                value => {console.log(value.menuList)
+                value => {
                     return(
                         <div className="menu-list">
                             <Container>

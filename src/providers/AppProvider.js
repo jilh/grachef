@@ -110,7 +110,15 @@ class AppProvider extends React.Component{
 
     render(){
         return(
-            <AppContext.Provider value={this.state}>
+            <AppContext.Provider value={{
+                    state: this.state,
+                    updateCartItemQuantity: (e, index) => {
+                        const newCartItem = this.state.cartItem.slice(); // Copy array
+                        newCartItem[index].itemQuantity = e.target.value
+                        this.setState({cartItem: newCartItem})
+                    }
+                }}>
+
                 {this.props.children}
             </AppContext.Provider>
         )
