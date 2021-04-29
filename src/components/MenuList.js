@@ -15,7 +15,7 @@ function MenuList(){
                                 <div className="menu-list-wrapper">
 
                                     {
-                                        value.menuList.map((menu) => {
+                                        value.state.menuList.map((menu) => {
                                             let rating;
                                             if(menu.itemRating === 1){
                                                 rating = 
