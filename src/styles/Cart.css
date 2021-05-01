@@ -26,6 +26,7 @@
     color: #707070;
     position: absolute;
     right: 15px;
+    cursor: pointer;
 }
 .cart-item > img{
     width: auto;

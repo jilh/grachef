@@ -116,7 +116,12 @@ class AppProvider extends React.Component{
                         const newCartItem = this.state.cartItem.slice(); // Copy array
                         newCartItem[index].itemQuantity = e.target.value
                         this.setState({cartItem: newCartItem})
-                    }
+                    },
+                    removeCartItem: (index) => {
+                        const newCartItem = this.state.cartItem.slice();
+                        newCartItem.splice(index, 1);
+                        this.setState({cartItem: newCartItem})
+                    },
                 }}>
 
                 {this.props.children}

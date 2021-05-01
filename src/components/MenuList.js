@@ -68,7 +68,7 @@ function MenuList(){
                                                     <img src={menu.itemImage} alt={menu.itemName} />
                                                     <b>{menu.itemName}</b>
                                                     {rating}
-                                                    <b>FCFA {menu.itemPrice}</b>
+                                                    <b>XAF {menu.itemPrice}</b>
                                                     <div className="cta-btn">
                                                         <em>{menu.isFavourite ? <FaRegHeart /> : <FaHeart />}</em>
                                                         <a href="#add">Add to Cart</a>

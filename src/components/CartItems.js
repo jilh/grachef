@@ -20,11 +20,11 @@ function CartItems(){
                                                     value.state.cartItem.map((cart, index) => {
                                                         return(
                                                             <div className="cart-item shadow-sm bg-white mb-3" key={cart.id}>
-                                                                <span>x</span>
+                                                                <span onClick={() => value.removeCartItem(index)}>x</span>
                                                                 <img src={cart.itemImage} alt={cart.itemName} />
                                                                 <div className="item-details">
                                                                     <b>{cart.itemName}</b>
-                                                                    <i>FCFA {cart.itemPrice}</i>
+                                                                    <i>XAF {cart.itemPrice}</i>
                                                                     <input type="number" min="1" value={cart.itemQuantity} className="quantity" onChange={(e) => value.updateCartItemQuantity(e, index)} />
                                                                 </div>
                                                             </div>
@@ -38,15 +38,15 @@ function CartItems(){
                                         <div className="item-total shadow-sm bg-white">
                                             <div className="delivery-price">
                                                 <i>Delivery Charge</i>
-                                                <b>FCFA 3000</b>
+                                                <b>XAF 3000</b>
                                             </div>
                                             <div className="tax-price">
                                                 <i>VAT (10%)</i>
-                                                <b>FCFA 300</b>
+                                                <b>XAF 300</b>
                                             </div>
                                             <div className="total-price">
                                                 <i>Sub-total</i>
-                                                <b>FCFA 3300</b>
+                                                <b>XAF 3300</b>
                                             </div>
                                         </div>
 
