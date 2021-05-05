@@ -23,8 +23,14 @@
     margin-left: 10px;
     color: #969696;
     padding: 12px 20px;
+    cursor: pointer;
 }
-.category-search > ul > li:first-of-type {
+/* .category-search > ul > li:first-of-type {
+    border-bottom: 2px solid #F89A3A;
+    color: #F89A3A;
+} */
+
+.category-search .active {
     border-bottom: 2px solid #F89A3A;
     color: #F89A3A;
 }

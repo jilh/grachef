@@ -16,7 +16,7 @@ function Menu(){
                                     <ul>
                                         {
                                             value.state.categoryList.map((number) => {
-                                                return <li key={number.id.toString()}>{number.categoryName}</li>
+                                                return <li key={number.id.toString()} className={value.state.activeCategory === number.id ? "active" : " "} onClick={() => value.updateActiveCategory(number.id)}>{number.categoryName}</li>
                                             })
                                         }
                                     </ul>

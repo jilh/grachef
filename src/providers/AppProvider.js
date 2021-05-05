@@ -4,6 +4,7 @@ import AppContext from '../contexts/AppContext'
 class AppProvider extends React.Component{
     state = {
         isAuthenticated: false,
+        activeCategory: 1, 
         cartItem: [
             {
                 id: 1,
@@ -122,6 +123,9 @@ class AppProvider extends React.Component{
                         newCartItem.splice(index, 1);
                         this.setState({cartItem: newCartItem})
                     },
+                    updateActiveCategory: (category) => {
+                        this.setState({activeCategory: category})
+                    }
                 }}>
 
                 {this.props.children}
