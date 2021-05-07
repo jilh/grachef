@@ -123,6 +123,26 @@ class AppProvider extends React.Component{
                         newCartItem.splice(index, 1);
                         this.setState({cartItem: newCartItem})
                     },
+                    addCartItem: (item) => {
+                        const newCartItem = this.state.cartItem.slice(); //cloned array of cartitem
+                        let elementIndex; // a variable to store element index
+                        const isPresent = newCartItem.some(function(cartElement, i){
+                            if(cartElement.id === item.id){ //check if element to be added is present in cartitem array
+                                elementIndex = i; // store index of the element if found
+                                return true; // return true and store in the variable
+                            }else{
+                                return false; // return false and store in the variable
+                            }
+                        });
+
+                        if(isPresent){ // validate presence of item in the list
+                            newCartItem[elementIndex].itemQuantity += 1 // increase item quantity if present
+                        }else{
+                            newCartItem.push(item)
+                        }
+                        // newCartItem.push(item);
+                        this.setState({cartItem: newCartItem})
+                    },
                     updateActiveCategory: (category) => {
                         this.setState({activeCategory: category})
                     }

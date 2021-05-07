@@ -71,7 +71,13 @@ function MenuList(){
                                                     <b>XAF {menu.itemPrice}</b>
                                                     <div className="cta-btn">
                                                         <em>{menu.isFavourite ? <FaRegHeart /> : <FaHeart />}</em>
-                                                        <a href="#add">Add to Cart</a>
+                                                        <a href="#add" onClick={() => value.addCartItem({
+                                                            id: menu.id,
+                                                            itemName: menu.itemName,
+                                                            itemImage: menu.itemImage,
+                                                            itemQuantity: 1,
+                                                            itemPrice: menu.itemPrice})}
+                                                            >Add to Cart</a>
                                                     </div>
                                                 </div>
                                             )
