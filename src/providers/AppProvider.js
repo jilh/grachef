@@ -113,6 +113,13 @@ class AppProvider extends React.Component{
         return(
             <AppContext.Provider value={{
                     state: this.state,
+                    getCartItemQuantity: () => {
+                        let cartItemQuantity = 0;
+                        this.state.cartItem.forEach(function(e){
+                            cartItemQuantity += e.itemQuantity
+                        })
+                        return cartItemQuantity;
+                    },
                     updateCartItemQuantity: (e, index) => {
                         const newCartItem = this.state.cartItem.slice(); // Copy array
                         newCartItem[index].itemQuantity = e.target.value
