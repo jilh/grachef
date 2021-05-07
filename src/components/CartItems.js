@@ -12,7 +12,9 @@ function CartItems(){
                     return(
                         <Container>
                             <div className="cart">
+                                 
                                 <h3>Items in your shopping cart</h3>
+                                {value.state.cartItem.length > 0 ?
                                 <Row>
                                     <Col lg={8}>
                                             <div className="cart-item-wrapper">
@@ -55,6 +57,9 @@ function CartItems(){
                                         </div>
                                     </Col>
                                 </Row>
+                            : 
+                            <div>Your shopping cart is empty</div>
+                            }
                             </div>
                         </Container>
                     )
