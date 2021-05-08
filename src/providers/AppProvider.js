@@ -109,6 +109,18 @@ class AppProvider extends React.Component{
         ]
     }
 
+    componentDidMount(){
+        if(localStorage.getItem('cart') !== null) this.setState({cartItem: JSON.parse(localStorage.getItem('cart') || "[]")})
+    }
+
+    componentWillUnmount(){
+        localStorage.setItem('cart', JSON.stringify(this.state.cartItem))
+    }
+
+    componentDidUpdate(){
+        localStorage.setItem('cart', JSON.stringify(this.state.cartItem));
+    }
+
     getItemsPrice = () => {
         let itemsPrice = 0;
         this.state.cartItem.forEach(e => itemsPrice += (e.itemPrice * e.itemQuantity))
@@ -141,7 +153,6 @@ class AppProvider extends React.Component{
                         newCartItem.forEach(function(e){
                             cartItemQuantity = +cartItemQuantity + +e.itemQuantity
                         })
-                        console.log(cartItemQuantity)
                         return cartItemQuantity;
                     },
                     updateCartItemQuantity: (e, index) => {
