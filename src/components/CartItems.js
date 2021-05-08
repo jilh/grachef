@@ -38,17 +38,21 @@ function CartItems(){
                                     </Col>
                                     <Col lg={4}>
                                         <div className="item-total shadow-sm bg-white">
+                                            <div className="item-price">
+                                                <i>Item Total</i>
+                                                <b>XAF {value.itemsPrice}</b>
+                                            </div>
                                             <div className="delivery-price">
                                                 <i>Delivery Charge</i>
-                                                <b>XAF 3000</b>
+                                                <b>XAF {value.deliveryCharge}</b>
                                             </div>
                                             <div className="tax-price">
                                                 <i>VAT (10%)</i>
-                                                <b>XAF 300</b>
+                                                <b>XAF {value.itemsVAT}</b>
                                             </div>
                                             <div className="total-price">
                                                 <i>Sub-total</i>
-                                                <b>XAF 3300</b>
+                                                <b>XAF {value.subTotal}</b>
                                             </div>
                                         </div>
 

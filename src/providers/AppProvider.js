@@ -109,15 +109,39 @@ class AppProvider extends React.Component{
         ]
     }
 
+    getItemsPrice = () => {
+        let itemsPrice = 0;
+        this.state.cartItem.forEach(e => itemsPrice += (e.itemPrice * e.itemQuantity))
+        return itemsPrice;
+    }
+
+    getItemsVAT = () => {
+        return this.getItemsPrice() * 0.1;
+    }
+
+    getDeliveryCharge = () => {
+        return 200;
+    }
+
+    getSubTotal = () => {
+        return this.getItemsPrice() + this.getItemsVAT() + this.getDeliveryCharge();
+    }
+
     render(){
         return(
             <AppContext.Provider value={{
                     state: this.state,
+                    itemsVAT: this.getItemsVAT(),
+                    itemsPrice: this.getItemsPrice(),
+                    deliveryCharge: this.getDeliveryCharge(),
+                    subTotal: this.getSubTotal(),
                     getCartItemQuantity: () => {
                         let cartItemQuantity = 0;
-                        this.state.cartItem.forEach(function(e){
-                            cartItemQuantity += e.itemQuantity
+                        const newCartItem = this.state.cartItem.slice(); // Copy array
+                        newCartItem.forEach(function(e){
+                            cartItemQuantity = +cartItemQuantity + +e.itemQuantity
                         })
+                        console.log(cartItemQuantity)
                         return cartItemQuantity;
                     },
                     updateCartItemQuantity: (e, index) => {
