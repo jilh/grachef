@@ -2,7 +2,7 @@
     background: transparent !important;
 }
 .bg-customized{
-    background: rgb(255, 255, 255);
+    background: #FFFEF0;
     -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034);
     -moz-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034);
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034);
