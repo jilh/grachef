@@ -21,7 +21,7 @@ function Navigation(){
 
     const [navbarChanged, setNavbarChanged] = useState(false);
     const {pathname} = useLocation()
-    const mountedRef = useRef();
+    const mountedRef = useRef(true);
 
     const changeNavbarBackground = () => {
         if(window.scrollY >= 60){
@@ -32,7 +32,15 @@ function Navigation(){
     }
 
     // Event fires up on scroll (to change navbar background)
-    window.addEventListener('scroll', changeNavbarBackground);
+    useEffect(() => {
+        if(mountedRef.current){
+            window.addEventListener('scroll', changeNavbarBackground);
+        }
+        return () => {
+            window.removeEventListener('scroll', changeNavbarBackground)
+            //mountedRef.current = false;
+        }
+    });
 
     // Automatically scroll to page top 
 

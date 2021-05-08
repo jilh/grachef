@@ -35,9 +35,9 @@ function Header(){
                         <div style={{position: 'relative'}}>
                             <ul className={'social-icons'}>
                                 <li><a href="https://www.facebook.com/grachefofficial" target="__blank"><FaFacebookSquare /></a></li>
-                                <li><a href="#"><FaLinkedin /></a></li>
-                                <li><a href="#"><FaTwitterSquare /></a></li>
-                                <li><a href="#"><FaInstagramSquare /></a></li>
+                                <li><a href="#linkedin"><FaLinkedin /></a></li>
+                                <li><a href="#twitter"><FaTwitterSquare /></a></li>
+                                <li><a href="#instagram"><FaInstagramSquare /></a></li>
                             </ul>
                         </div>
                     </Row>
