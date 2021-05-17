@@ -10,15 +10,6 @@ import AppContext from "../contexts/AppContext";
 
 function Navigation(){
 
-    // const [showCheckout, setShowCheckout] = useState(false);
-    // const toggleCheckout = () => {
-    //     if ( showCheckout ){
-    //         setShowCheckout(false);
-    //     } else {
-    //         setShowCheckout(true);
-    //     }
-    // }
-
     const [navbarChanged, setNavbarChanged] = useState(false);
     const {pathname} = useLocation()
     const mountedRef = useRef(true);
@@ -54,7 +45,7 @@ function Navigation(){
             {
                 value => {
                     return(
-                        <Navbar fixed="top" bg={navbarChanged || pathname === "/cart" ? "customized": "transparent"} expand="lg" style={{paddingTop: '10px', zIndex: 1000}}>
+                        <Navbar fixed="top" bg={navbarChanged || pathname !== "/" ? "customized": "transparent"} expand="lg" style={{paddingTop: '10px', zIndex: 1000}}>
                             <Container>
                                 <Navbar.Brand href="#home" className={"brand-text"} style={{zIndex: -1}}>
                                 <img
@@ -69,8 +60,8 @@ function Navigation(){
                                 
                                 {/* <Navbar.Collapse id="basic-navbar-nav"> */}
                                     <Nav className="ml-auto nav-hack">
-                                        <Nav.Link as={Link} to="/"><FaHome className={navbarChanged || pathname === "/cart" ? "navigation-link-customized" : "navigation-link"} /></Nav.Link>
-                                        <Nav.Link as={Link} to="/cart"><FaShoppingCart className={navbarChanged || pathname === "/cart" ? "navigation-link-customized" : "navigation-link"} />{ value.getCartItemQuantity() > 0 ? <sup><Badge pill className={'pill-style'}>{value.getCartItemQuantity()}</Badge></sup> : ''}</Nav.Link>
+                                        <Nav.Link as={Link} to="/"><FaHome className={navbarChanged || pathname !== "/" ? "navigation-link-customized" : "navigation-link"} /></Nav.Link>
+                                        <Nav.Link as={Link} to="/cart"><FaShoppingCart className={navbarChanged || pathname !== "/" ? "navigation-link-customized" : "navigation-link"} />{ value.getCartItemQuantity() > 0 ? <sup><Badge pill className={'pill-style'}>{value.getCartItemQuantity()}</Badge></sup> : ''}</Nav.Link>
                                     </Nav>
                                 {/* </Navbar.Collapse> */}
                             </Container>

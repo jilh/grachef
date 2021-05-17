@@ -1,0 +1,27 @@
+.hide {
+    display: none;
+}
+
+.custom-modal-wrapper{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #FFFEF0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2000;
+}
+
+.custom-modal-header{
+    height: 50px;
+    background: #FFFEF0;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+    align-items: center;
+}
+.custom-modal-header > span {
+    cursor: pointer;
+}

@@ -1,10 +1,24 @@
-import React from "react"
+import React, {useState}  from "react"
 import {Col, Container, Row} from "react-bootstrap"
 import '../styles/Cart.css'
 // import image from "../design-files/hero-image.png"
 import AppContext from "../contexts/AppContext"
+import CustomModal from "../components/CustomModal"
+import Registration from "../components/Registration"
 
 function CartItems(){
+    const [modalState, setModalState] = useState(false);
+    const setModalFalse = () => {
+        if(modalState !== false){
+            setModalState({modalState: false})
+        }
+    }
+
+    const setModalTrue = () => {
+        if(modalState !== true){
+            setModalState({modalState: true})
+        }
+    }
     return(
         <AppContext.Consumer>
             {
@@ -57,8 +71,10 @@ function CartItems(){
                                         </div>
 
                                         <div className="cart-cta">
-                                            <button className="cart-btn">Checkout</button>
+                                            <button className="cart-btn" onClick={() => setModalTrue()}>Checkout</button>
                                         </div>
+
+                                        <CustomModal content={<Registration />} title="James Bond" show={modalState} onHide={setModalFalse} />
                                     </Col>
                                 </Row>
                             : 
