@@ -1,6 +1,5 @@
 import React from 'react'
 import Navigation from "./Navigation"
-import CartItems from "./CartItems"
 import Footer from "./Footer"
 import Registration from './Registration'
 import { Col, Container, Row } from 'react-bootstrap'
