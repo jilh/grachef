@@ -74,7 +74,7 @@ function CartItems(){
                                             <button className="cart-btn" onClick={() => setModalTrue()}>Checkout</button>
                                         </div>
 
-                                        <CustomModal content={<Registration />} title="James Bond" show={modalState} onHide={setModalFalse} />
+                                        <CustomModal content={<Registration />} title="" show={modalState} onHide={setModalFalse} />
                                     </Col>
                                 </Row>
                             : 

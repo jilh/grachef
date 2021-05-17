@@ -1,0 +1,42 @@
+.custom-form {
+    display: flex;
+    flex-direction: column;
+}
+.custom-form > .form-col{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.custom-form > .form-col > .form-base{
+    flex-basis: 45%;
+}
+.custom-form > .form-base, .custom-form > .form-col > .form-base{
+    display: flex;
+    flex-direction: column;
+    margin: 12px 0px;
+}
+.custom-form > .form-base > label, .custom-form > .form-col > .form-base > label{
+    color: inherit;
+}
+.custom-form > .form-base > .custom-form-input, .custom-form > .form-col > .form-base > .custom-form-input{
+    height: 40px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: 1px solid #dfdfdf;
+}
+.custom-form > .form-base > .custom-form-input:focus, .custom-form > .form-col > .form-base > .custom-form-input:focus{
+    border: 1px solid #F89A3A;
+    border-radius: 50px;
+    outline: none;
+}
+
+.custom-form-btn {
+    border: 1px solid #F89A3A;
+    padding: 12px 20px;
+    /* background: #F9F06C; */
+    background: #F89A3A;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50px;
+    width: 100%;
+}

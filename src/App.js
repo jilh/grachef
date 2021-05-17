@@ -7,6 +7,7 @@ import Cart from "./components/Cart"
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 // import AppContext from './contexts/AppContext'
 import AppProvider from './providers/AppProvider'
+import SignUp from './components/SignUp';
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
               </Route>
               <Route path="/cart">
                   <Cart />
+              </Route>
+              <Route path="/signup">
+                  <SignUp />
               </Route>
             </Switch>
       </BrowserRouter>
