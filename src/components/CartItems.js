@@ -70,6 +70,14 @@ function CartItems(){
                                             </div>
                                         </div>
 
+                                        <div className="delivery-options shadow-sm bg-white mt-3">
+                                                <select name="deliveryType">
+                                                    <option value="">Select Delivery Option</option>
+                                                    <option value="Pickup">Pick Up</option>
+                                                    <option value="Doorstep">Door Step</option>
+                                                </select>
+                                        </div>
+
                                         <div className="cart-cta">
                                             <button className="cart-btn" onClick={() => setModalTrue()}>Checkout</button>
                                         </div>
