@@ -5,6 +5,7 @@ class AppProvider extends React.Component{
     state = {
         isAuthenticated: false,
         activeCategory: 1, 
+        preferredDeliveryOption: '',
         cartItem: [
             // {
             //     id: 1,
@@ -132,7 +133,17 @@ class AppProvider extends React.Component{
     }
 
     getDeliveryCharge = () => {
-        return 200;
+        if(this.state.preferredDeliveryOption === ''){
+            return 0;
+        }else if(this.state.preferredDeliveryOption === 'PICKUP'){
+            return 0;
+        }else if(this.state.preferredDeliveryOption === 'DOORSTEP'){
+            return 200;
+        }
+    }
+
+    updatePreferredDeliveryOption = (e) => {
+        this.setState({preferredDeliveryOption: e.target.value});
     }
 
     getSubTotal = () => {
@@ -187,6 +198,9 @@ class AppProvider extends React.Component{
                     },
                     updateActiveCategory: (category) => {
                         this.setState({activeCategory: category})
+                    },
+                    updatePreferredDeliveryOption: (e) => {
+                        this.setState({preferredDeliveryOption: e.target.value})
                     }
                 }}>
 

@@ -71,10 +71,10 @@ function CartItems(){
                                         </div>
 
                                         <div className="delivery-options shadow-sm bg-white mt-3">
-                                                <select name="deliveryType">
+                                                <select name="deliveryType" onChange={(e) => value.updatePreferredDeliveryOption(e)}>
                                                     <option value="">Select Delivery Option</option>
-                                                    <option value="Pickup">Pick Up</option>
-                                                    <option value="Doorstep">Door Step</option>
+                                                    <option value="PICKUP">Pick Up</option>
+                                                    <option value="DOORSTEP">Door Step</option>
                                                 </select>
                                         </div>
 
