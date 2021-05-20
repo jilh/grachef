@@ -40,3 +40,14 @@
     border-radius: 50px;
     width: 100%;
 }
+
+@media screen and (max-width: 997px){
+    .custom-form > .form-col{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .custom-form > .form-col > .form-base{
+        flex-basis: 100%;
+    }
+}
