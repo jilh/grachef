@@ -8,6 +8,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 // import AppContext from './contexts/AppContext'
 import AppProvider from './providers/AppProvider'
 import SignUp from './components/SignUp';
+import SignIn from './components/SignIn';
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
               </Route>
               <Route path="/signup">
                   <SignUp />
+              </Route>
+              <Route path="/signin">
+                  <SignIn />
               </Route>
             </Switch>
       </BrowserRouter>
