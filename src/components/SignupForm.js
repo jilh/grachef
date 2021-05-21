@@ -34,16 +34,12 @@ function SignupForm(){
                 </select>
             </div>
             <div className="form-base">
-                <label>Delivery Location</label>
-                <select name="delivery_location" class="custom-form-input">
-                    <option value="">Choose a delivery location</option>
-                    <option value="Egbe">Egbe</option>
-                    <option value="Ilorin">Ilorin</option>
-                </select>
+                <label>Delivery Address</label>
+                <textarea name="delivery_location" class="custom-textarea" placeholder="Type your address here"></textarea>
             </div>
             <div className="form-base">
                 <p>Already have an account? Login <a href="#login">here</a></p>
-                <input type="submit" value="Register" className="custom-form-btn" />
+                <input type="submit" value="Create Account" className="custom-form-btn" />
             </div>
         </form>
     )

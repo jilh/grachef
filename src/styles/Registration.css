@@ -24,6 +24,19 @@
     border-radius: 50px;
     border: 1px solid #dfdfdf;
 }
+.custom-form > .form-base > .custom-textarea {
+    height: auto;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: 1px solid #dfdfdf;
+    max-height: 100px;
+}
+.custom-form > .form-base > .custom-textarea:focus {
+    height: auto;
+    border: 1px solid #F89A3A;
+    border-radius: 5px;
+    outline: none;
+}
 .custom-form > .form-base > .custom-form-input:focus, .custom-form > .form-col > .form-base > .custom-form-input:focus{
     border: 1px solid #F89A3A;
     border-radius: 50px;
