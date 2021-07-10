@@ -6,7 +6,7 @@ import SignupForm from "../components/SignupForm"
 
 function Registration(){
     const {pathname} = useLocation();
-    const SignInForm = <SigninForm />
+    // const SignInForm = <SigninForm />
 
     if(pathname === "/signin"){
         return(
